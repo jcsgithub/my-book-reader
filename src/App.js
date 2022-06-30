@@ -20,6 +20,10 @@ function App() {
 
     if (file && file.type !== "text/plain") {
       alert("Invalid book file!");
+      setContent("");
+      setCurrentPage(0);
+      setTotalPages(0);
+      setPages([]);
       return;
     }
 
